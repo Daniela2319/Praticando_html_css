@@ -30,6 +30,14 @@ head, title, body, header, footer, article, section, p, div, img, nav, ul, ol, l
   <br>
    <figcaption aling="left">Figura mostra fotos do seu gatinhos.</figcaption>
 </section>
+<br>
+<section align="center">
+  <figure>
+<img src="https://github.com/Daniela2319/Praticando_html_css/assets/106537496/822bda68-cd35-4c6c-8138-b142edafe1cb" height="300" width="500">
+  </figure>
+  <br>
+   <figcaption aling="left">Figura mostra formulário.</figcaption>
+</section>
 
 
 # Tecnologia 
