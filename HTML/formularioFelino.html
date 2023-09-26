@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Felino</title>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/CSS/estilo.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Formulário Felino 💻</h1>
+        <!--arial laber define valor string que rotulam um elemento interativo-->
+        <nav aria-label="navegação primaria">
+            <ul id="lista">
+                <li>
+                    <a href="/HTML/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="/HTML/index.html#fatos">Fatos sobre gatos</a>
+                </li>
+                
+            </ul>
+
+        </nav>
+        
+    </header>
+    <hr>
+    <main>
+        <article id="formulario">
+            <h2>Formulário Felino</h2>
+            <p>Responda essa pesquisa e nos ajude a entender mais sobre
+                esses bichinhos lindos.
+            </p>
+            <p>PS: Se você quiser, pode anexar uma foto do seu
+            gato para fazer parte de nossa galeria.
+            </p>
+            <!--seção que contém controles interativos-->
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <!--usado para agrupar elementos, dentro formulario-->   
+                <fieldset>
+            <!--Representa um rótulo para fieldset-->
+                    <legend>
+                        Informações sobre seu gato
+                    </legend>
+            <!--Legenda para item em interface de usuário-->
+                    <p>
+                    <label for="nomeGato">Qual o nome do seu gato?</label>
+                    <input type="text" name="nomeGato" id="nomeGato" placeholder="Garfield"
+                    autocomplete="on" required autofocus >
+                    </p>
+                    <p>
+                    <label for="idadeGato">Quantos gatos você tem?</label>
+                    <input type="number" name="idadeGato" id="idadeGato" placeholder="3 anos"
+                    min="1" max="30" step="1" value="1" required>
+                    </p>
+                    <p>Seu gato(s) fica dentro de casa ou tem acesso à rua?</p>
+                    <p>
+                        <input type="radio" name="casaRua" id="casa" value="casa">
+                        <label for="casa">Fica em casa</label>
+                    </p>
+                    <p>
+                        <!--radio coloca bolinha para usuario escolher a opção-->
+                        <input type="radio" name="casaRua" id="rua" value="rua">
+                        <label for="rua">Sai pra rua</label>
+                    </p>
+                    <p>Como é a personalidade do seu gato?</p>
+                    <p>
+                        <!--checkbox coloca o quadradinho para usuario escolher a opção-->
+                        <input type="checkbox" name="personalidade" id="manhoso">
+                        <label for="manhoso">Manhoso</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="personalidade" id="preguicoso">
+                        <label for="preguicoso">Preguiçoso</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="personalidade" id="espoleta">
+                        <label for="espoleta">Espoleta</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="personalidade" id="desconfiado">
+                        <label for="desconfiado">Desconfiado</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Seu gato na nossa galeria</legend>
+                    <p>Anexe uma foto para nossa equipe adicionar na galeria</p>
+                    <input type="file" name="anexoFoto" id="anexoFoto">
+                    <p>
+                        <label for="mensagem">Legenda da Foto</label>
+                    </p>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"
+                    placeholder="Insira a legenda da sua foto aqui"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Redefinir</button>
+            </form>
+
+        </article> 
+            <hr>    
+        <p><a href="/HTML/formularioFelino.html">Volta ao Topo</a></p>
+    </main>
+    <footer>
+        <p>
+            &lt; &copy; Copyright App Meu Gatinho Fofinho &gt;
+            </p>
+    </footer>
+</body>
+</html>

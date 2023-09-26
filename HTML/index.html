@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Meu Gatinho Fofinho</title>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/CSS/estilo.css" type="text/css">
+</head>
+<body>
+    <!--header cabeçalho-->
+    <header>
+        <h1>App Meu Gatinho Fofinho 😻</h1>
+        <!--arial laber define valor string que rotulam um elemento interativo-->
+        <nav aria-label="navegação primaria">
+            <ul id="lista">
+                <li>
+                    <a href="/HTML/fotosDeGatos.html">Fotos de Gatos</a>
+                </li>
+                <li>
+                    <a href="#fatos">Fatos sobre gatos</a>
+                </li>
+                <li>
+                    <a href="/HTML/formularioFelino.html">Formulário</a>
+                </li>
+                <li>
+                    <a href="#colabore">Colabore</a>
+                </li>
+            </ul>
+
+        </nav>
+        <hr>
+    </header>
+    
+    <!--Contéudo principal o main dentro <body>-->
+    <main>
+    <!--Section (seções) genérica em um HTML geralmente com um título-->
+    <section>
+    <h2>Fotos de Gatos</h2>
+    <p>Clique para ver mais <a href="/HTML/fotosDeGatos.html" target="_blank">fotos de gatos</a></p>
+    <a id="linkFoto" href="/HTML/fotosDeGatos.html" target="_blank">
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+    alt="um gato laranja deitado de costas.">
+    </a>
+    </section>
+    <hr>
+    <!--article composição independente pode ser: post, artigo, comentário usuário-->
+    <article id="fatos">
+    <h2>Fatos sobre gatos</h2>
+    <!--Camel case usa palavra sem espeço ex:gatosAmam-->
+    <section id="gatosAmam">
+    <h3>Coisas que gatos amam:</h3>
+    <ul>
+        <li>Catnip (erva para gato)</li>
+        <li>Amassar pãozinho</li>
+        <li>Cheirar azeitonas</li>
+    </ul>
+    <!--figure contém imagem ilustrada e também da espaço na imagem --> 
+    <figure>
+        <img src="/img/azeitona.jfif"
+        alt="azeitonas" width="280" height="142">
+        <!--figcaption é legenda na imagem-->
+        <figcaption>Gatos <em>amam</em> cheirar azeitonas!</figcaption>
+    </figure>
+    <!--Seção con contéudo tangencialmente relacionado ao contéudo principa da página-->
+    <aside>
+        <!--Usando como ferramenta de onde o usário obterá informações adicionais-->
+        <details>
+            <!--Utilizado como um sumário ou legenda para o contéudo de um elemento <details>-->
+            <summary>
+                Por que alguns gatos adoram azeitonas?</summary>
+                <p>Isso acontece devido à presença de componente químico
+                    semelhante ao encontrado no catnip.</p>
+                <p><strong>Atenção:</strong> Azeitona são ricas em sódio então,
+                <mark>não deixe</mark> seu gatinho comer azeitonas.</p>
+        </details>
+    </aside>
+    </section>
+    <section id="gatosOdeiam">
+    <h3>Top 3 coisas que gatos odeiam:</h3>
+    <ol>
+        <li>ir ao veterinário</li>
+        <li>Fogos de artifício</li>
+        <li>Invasores</li>
+    </ol>
+    <figure>
+    <img src="/img/gato_invasor.jfif" 
+    alt="gato reagindo a outro gato.">
+    <figcaption>Gatos <strong>odeiam</strong> invasores em seu 
+        território</figcaption>
+    </figure>
+    </section>
+    </article>
+    <hr>
+    <section id="colabore">
+    <h2>Colabore com o app</h2>
+    <p>Responda <a href="/HTML/formularioFelino.html" target="_blank">essa pesquisa</a> nos ajuda a entender
+        mais sobre esses bichinhos.</p>
+    <p>PS: Se você quiser, pode anexar uma fotos
+        do seu gato para fazer parte de nossa galeria.</p>
+    <p><a href="/HTML/formularioFelino.html" target="_blank">Quero parcipar da pesquisa</a></p>
+    </section>
+    <hr>
+    <p><a href="/">Volta ao topo</a></p>
+    </main>
+    <!--footer rodapé-->
+    <footer>
+        <p>
+        &lt; &copy; Copyright App Meu Gatinho Fofinho &gt;
+        </p>
+    </footer>
+    
+    
+</body>
+</html>
